@@ -7,18 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		673646A2293BFA7700D9A639 /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673646A1293BFA7700D9A639 /* TabBarButtonView.swift */; };
 		67680278293BF212001F5F67 /* BuildTinderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67680277293BF212001F5F67 /* BuildTinderAppApp.swift */; };
 		6768027A293BF212001F5F67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67680279293BF212001F5F67 /* ContentView.swift */; };
 		6768027C293BF213001F5F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6768027B293BF213001F5F67 /* Assets.xcassets */; };
 		6768027F293BF213001F5F67 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6768027E293BF213001F5F67 /* Preview Assets.xcassets */; };
+		67680286293BF35D001F5F67 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67680285293BF35C001F5F67 /* MainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		673646A1293BFA7700D9A639 /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
 		67680274293BF212001F5F67 /* BuildTinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildTinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67680277293BF212001F5F67 /* BuildTinderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTinderAppApp.swift; sourceTree = "<group>"; };
 		67680279293BF212001F5F67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6768027B293BF213001F5F67 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6768027E293BF213001F5F67 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		67680285293BF35C001F5F67 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,8 @@
 			children = (
 				67680277293BF212001F5F67 /* BuildTinderAppApp.swift */,
 				67680279293BF212001F5F67 /* ContentView.swift */,
+				67680285293BF35C001F5F67 /* MainView.swift */,
+				673646A1293BFA7700D9A639 /* TabBarButtonView.swift */,
 				6768027B293BF213001F5F67 /* Assets.xcassets */,
 				6768027D293BF213001F5F67 /* Preview Content */,
 			);
@@ -138,6 +144,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6768027A293BF212001F5F67 /* ContentView.swift in Sources */,
+				67680286293BF35D001F5F67 /* MainView.swift in Sources */,
+				673646A2293BFA7700D9A639 /* TabBarButtonView.swift in Sources */,
 				67680278293BF212001F5F67 /* BuildTinderAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
