@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @ObservedObject var mng: AppStateManager = AppStateManager() // state lives here
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
+        MainView() // where main view lives
+            .environmentObject(mng) // everything will have access to this object
     }
 }
 
