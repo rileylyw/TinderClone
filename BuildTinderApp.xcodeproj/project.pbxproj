@@ -10,6 +10,9 @@
 		673646A2293BFA7700D9A639 /* TabBarButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673646A1293BFA7700D9A639 /* TabBarButtonView.swift */; };
 		673646A6293D391600D9A639 /* AppStateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673646A5293D391600D9A639 /* AppStateManager.swift */; };
 		673646A8293D3B1500D9A639 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 673646A7293D3B1500D9A639 /* Extensions.swift */; };
+		6745C106293FB16C00A00696 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745C105293FB16C00A00696 /* ProfileView.swift */; };
+		6745C109293FC7D900A00696 /* RoundedImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6745C108293FC7D900A00696 /* RoundedImage.swift */; };
+		6745C10C293FC84200A00696 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6745C10B293FC84200A00696 /* Kingfisher */; };
 		67680278293BF212001F5F67 /* BuildTinderAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67680277293BF212001F5F67 /* BuildTinderAppApp.swift */; };
 		6768027A293BF212001F5F67 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67680279293BF212001F5F67 /* ContentView.swift */; };
 		6768027C293BF213001F5F67 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6768027B293BF213001F5F67 /* Assets.xcassets */; };
@@ -21,6 +24,8 @@
 		673646A1293BFA7700D9A639 /* TabBarButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarButtonView.swift; sourceTree = "<group>"; };
 		673646A5293D391600D9A639 /* AppStateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStateManager.swift; sourceTree = "<group>"; };
 		673646A7293D3B1500D9A639 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		6745C105293FB16C00A00696 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6745C108293FC7D900A00696 /* RoundedImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedImage.swift; sourceTree = "<group>"; };
 		67680274293BF212001F5F67 /* BuildTinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuildTinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		67680277293BF212001F5F67 /* BuildTinderAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildTinderAppApp.swift; sourceTree = "<group>"; };
 		67680279293BF212001F5F67 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6745C10C293FC84200A00696 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,6 +53,22 @@
 				67680285293BF35C001F5F67 /* MainView.swift */,
 			);
 			path = MainTabBar;
+			sourceTree = "<group>";
+		};
+		6745C107293FB1A300A00696 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				6745C105293FB16C00A00696 /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		6745C10D293FCA3100A00696 /* HelperView */ = {
+			isa = PBXGroup;
+			children = (
+				6745C108293FC7D900A00696 /* RoundedImage.swift */,
+			);
+			path = HelperView;
 			sourceTree = "<group>";
 		};
 		6768026B293BF212001F5F67 = {
@@ -72,8 +94,10 @@
 				67680279293BF212001F5F67 /* ContentView.swift */,
 				673646A5293D391600D9A639 /* AppStateManager.swift */,
 				6745C104293D4A6D00A00696 /* MainTabBar */,
-				673646A7293D3B1500D9A639 /* Extensions.swift */,
+				6745C107293FB1A300A00696 /* Profile */,
+				6745C10D293FCA3100A00696 /* HelperView */,
 				6768027B293BF213001F5F67 /* Assets.xcassets */,
+				673646A7293D3B1500D9A639 /* Extensions.swift */,
 				6768027D293BF213001F5F67 /* Preview Content */,
 			);
 			path = BuildTinderApp;
@@ -103,6 +127,9 @@
 			dependencies = (
 			);
 			name = BuildTinderApp;
+			packageProductDependencies = (
+				6745C10B293FC84200A00696 /* Kingfisher */,
+			);
 			productName = BuildTinderApp;
 			productReference = 67680274293BF212001F5F67 /* BuildTinderApp.app */;
 			productType = "com.apple.product-type.application";
@@ -131,6 +158,9 @@
 				Base,
 			);
 			mainGroup = 6768026B293BF212001F5F67;
+			packageReferences = (
+				6745C10A293FC84200A00696 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 67680275293BF212001F5F67 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,10 +188,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				6768027A293BF212001F5F67 /* ContentView.swift in Sources */,
+				6745C109293FC7D900A00696 /* RoundedImage.swift in Sources */,
 				673646A8293D3B1500D9A639 /* Extensions.swift in Sources */,
 				67680286293BF35D001F5F67 /* MainView.swift in Sources */,
 				673646A2293BFA7700D9A639 /* TabBarButtonView.swift in Sources */,
 				67680278293BF212001F5F67 /* BuildTinderAppApp.swift in Sources */,
+				6745C106293FB16C00A00696 /* ProfileView.swift in Sources */,
 				673646A6293D391600D9A639 /* AppStateManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +393,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6745C10A293FC84200A00696 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6745C10B293FC84200A00696 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6745C10A293FC84200A00696 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6768026C293BF212001F5F67 /* Project object */;
 }
