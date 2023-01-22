@@ -37,6 +37,6 @@ struct TabBarButtonView: View {
 
 struct TabBarButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        TabBarButtonView(type: .profile)
+        TabBarButtonView(type: .profile).environmentObject(AppStateManager())
     }
 }

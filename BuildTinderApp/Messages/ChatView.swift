@@ -69,8 +69,7 @@ struct ChatView: View {
                 // video action
             }
         }
-        .navigationTitle("")
-        .navigationBarHidden(true)
+        .modifier(HideNavigationView())
         .onChange(of: chatMng.keyboardIsShowing, perform: { value in
             if value { // keyboard IS showing
                 scrollToBottom()
