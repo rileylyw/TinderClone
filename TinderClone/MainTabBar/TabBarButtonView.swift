@@ -1,6 +1,6 @@
 //
 //  TapBarButtonView.swift
-//  BuildTinderApp
+//  TinderClone
 //
 //  Created by Riley Lee on 03/12/2022.
 //

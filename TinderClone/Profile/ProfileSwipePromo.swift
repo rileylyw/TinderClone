@@ -1,6 +1,6 @@
 //
 //  ProfileSwipePromo.swift
-//  BuildTinderApp
+//  TinderClone
 //
 //  Created by Riley Lee on 10/12/2022.
 //

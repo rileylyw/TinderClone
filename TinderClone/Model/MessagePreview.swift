@@ -1,6 +1,6 @@
 //
 //  MessageThread.swift
-//  BuildTinderApp
+//  TinderClone
 //
 //  Created by Riley Lee on 19/12/2022.
 //

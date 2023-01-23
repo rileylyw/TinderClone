@@ -1,6 +1,6 @@
 //
 //  MessageListView.swift
-//  BuildTinderApp
+//  TinderClone
 //
 //  Created by Riley Lee on 6/1/2023.
 //

@@ -1,6 +1,6 @@
 //
 //  Extensions.swift
-//  BuildTinderApp
+//  TinderClone
 //
 //  Created by Riley Lee on 04/12/2022.
 //

@@ -1,6 +1,6 @@
 //
 //  MainView.swift
-//  BuildTinderApp
+//  TinderClone
 //
 //  Created by Riley Lee on 03/12/2022.
 //
@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     
     @EnvironmentObject var appState: AppStateManager // to access the states @EnvironmentObject
+    @EnvironmentObject var userMng: UserManager
     
     func correctViewForState() -> some View {
         switch appState.selectedTab {
@@ -18,7 +19,7 @@ struct MainView: View {
             let view = Text("Fire")
             return AnyView(view)
         case .star:
-            let view = Color.yellow
+            let view = MatchesView()
             return AnyView(view)
         case .message:
             let view = MessageListView()
@@ -63,6 +64,8 @@ struct MainView: View {
 
 struct MainView_Previews: PreviewProvider {
     static var previews: some View {
-        MainView().environmentObject(AppStateManager())
+        MainView()
+            .environmentObject(AppStateManager())
+            .environmentObject(UserManager())
     }
 }

@@ -1,6 +1,6 @@
 //
 //  RoundedImage.swift
-//  BuildTinderApp
+//  TinderClone
 //
 //  Created by Riley Lee on 06/12/2022.
 //
