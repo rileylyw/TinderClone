@@ -35,6 +35,7 @@
 		88762C9B297AC72000EA406A /* MessageRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88762C9A297AC72000EA406A /* MessageRowView.swift */; };
 		889CC5F929685FB5000025E6 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889CC5F829685FB5000025E6 /* MessageListView.swift */; };
 		889CC5FB29685FC5000025E6 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889CC5FA29685FC5000025E6 /* MessageListVM.swift */; };
+		88FBB4CE297EE69B00BB3F1D /* PurchasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4CD297EE69B00BB3F1D /* PurchasePopup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		88762C9A297AC72000EA406A /* MessageRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRowView.swift; sourceTree = "<group>"; };
 		889CC5F829685FB5000025E6 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		889CC5FA29685FC5000025E6 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
+		88FBB4CD297EE69B00BB3F1D /* PurchasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 				6745C107293FB1A300A00696 /* Profile */,
 				67F8001D2950B1A1007E053D /* Messages */,
 				882724BF297E84B000EC0EFD /* MatchesView */,
+				88FBB4CF297EE6A000BB3F1D /* Popups */,
 				67F800162950AEEE007E053D /* Model */,
 				6745C10D293FCA3100A00696 /* HelperView */,
 				6768027B293BF213001F5F67 /* Assets.xcassets */,
@@ -184,6 +187,14 @@
 				882724C6297ECF7A00EC0EFD /* MatchesView.swift */,
 			);
 			path = MatchesView;
+			sourceTree = "<group>";
+		};
+		88FBB4CF297EE6A000BB3F1D /* Popups */ = {
+			isa = PBXGroup;
+			children = (
+				88FBB4CD297EE69B00BB3F1D /* PurchasePopup.swift */,
+			);
+			path = Popups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +278,7 @@
 				6768027A293BF212001F5F67 /* ContentView.swift in Sources */,
 				882724C1297E8E7200EC0EFD /* PersonSquare.swift in Sources */,
 				6745C109293FC7D900A00696 /* RoundedImage.swift in Sources */,
+				88FBB4CE297EE69B00BB3F1D /* PurchasePopup.swift in Sources */,
 				67F800232950B6F0007E053D /* ChatViewHeader.swift in Sources */,
 				882724C7297ECF7A00EC0EFD /* MatchesView.swift in Sources */,
 				88762C9B297AC72000EA406A /* MessageRowView.swift in Sources */,
