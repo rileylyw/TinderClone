@@ -36,6 +36,14 @@
 		889CC5F929685FB5000025E6 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889CC5F829685FB5000025E6 /* MessageListView.swift */; };
 		889CC5FB29685FC5000025E6 /* MessageListVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 889CC5FA29685FC5000025E6 /* MessageListVM.swift */; };
 		88FBB4CE297EE69B00BB3F1D /* PurchasePopup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4CD297EE69B00BB3F1D /* PurchasePopup.swift */; };
+		88FBB4D1297FA23600BB3F1D /* PurchaseSwipePromo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4D0297FA23600BB3F1D /* PurchaseSwipePromo.swift */; };
+		88FBB4D4297FF24B00BB3F1D /* PurchaseOptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4D3297FF24B00BB3F1D /* PurchaseOptionView.swift */; };
+		88FBB4D6297FF2AA00BB3F1D /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4D5297FF2AA00BB3F1D /* Subscription.swift */; };
+		88FBB4D8298005B900BB3F1D /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4D7298005B900BB3F1D /* RoundedCorner.swift */; };
+		88FBB4DB2980192200BB3F1D /* CardImageScroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4DA2980192200BB3F1D /* CardImageScroller.swift */; };
+		88FBB4DF2980262200BB3F1D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4DE2980262200BB3F1D /* CardView.swift */; };
+		88FBB4E129802E2A00BB3F1D /* FullScreenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4E029802E2A00BB3F1D /* FullScreenCardView.swift */; };
+		88FBB4E3298034B700BB3F1D /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4E2298034B700BB3F1D /* CircleButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +76,14 @@
 		889CC5F829685FB5000025E6 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
 		889CC5FA29685FC5000025E6 /* MessageListVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListVM.swift; sourceTree = "<group>"; };
 		88FBB4CD297EE69B00BB3F1D /* PurchasePopup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchasePopup.swift; sourceTree = "<group>"; };
+		88FBB4D0297FA23600BB3F1D /* PurchaseSwipePromo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseSwipePromo.swift; sourceTree = "<group>"; };
+		88FBB4D3297FF24B00BB3F1D /* PurchaseOptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseOptionView.swift; sourceTree = "<group>"; };
+		88FBB4D5297FF2AA00BB3F1D /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		88FBB4D7298005B900BB3F1D /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		88FBB4DA2980192200BB3F1D /* CardImageScroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardImageScroller.swift; sourceTree = "<group>"; };
+		88FBB4DE2980262200BB3F1D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		88FBB4E029802E2A00BB3F1D /* FullScreenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCardView.swift; sourceTree = "<group>"; };
+		88FBB4E2298034B700BB3F1D /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				6745C108293FC7D900A00696 /* RoundedImage.swift */,
+				88FBB4E2298034B700BB3F1D /* CircleButtonView.swift */,
 			);
 			path = HelperView;
 			sourceTree = "<group>";
@@ -132,6 +149,7 @@
 				673646A5293D391600D9A639 /* AppStateManager.swift */,
 				882724B9297E812400EC0EFD /* UserManager.swift */,
 				6745C104293D4A6D00A00696 /* MainTabBar */,
+				88FBB4DD2980193200BB3F1D /* Home */,
 				6745C107293FB1A300A00696 /* Profile */,
 				67F8001D2950B1A1007E053D /* Messages */,
 				882724BF297E84B000EC0EFD /* MatchesView */,
@@ -139,7 +157,7 @@
 				67F800162950AEEE007E053D /* Model */,
 				6745C10D293FCA3100A00696 /* HelperView */,
 				6768027B293BF213001F5F67 /* Assets.xcassets */,
-				673646A7293D3B1500D9A639 /* Extensions.swift */,
+				88FBB4D9298005BD00BB3F1D /* Extensions */,
 				6768027D293BF213001F5F67 /* Preview Content */,
 			);
 			path = TinderClone;
@@ -160,6 +178,7 @@
 				67F800172950B062007E053D /* Person.swift */,
 				67F800192950B0FF007E053D /* MessagePreview.swift */,
 				882724BB297E814A00EC0EFD /* User.swift */,
+				88FBB4D5297FF2AA00BB3F1D /* Subscription.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -192,9 +211,46 @@
 		88FBB4CF297EE6A000BB3F1D /* Popups */ = {
 			isa = PBXGroup;
 			children = (
-				88FBB4CD297EE69B00BB3F1D /* PurchasePopup.swift */,
+				88FBB4D2297FA23900BB3F1D /* Purchase */,
 			);
 			path = Popups;
+			sourceTree = "<group>";
+		};
+		88FBB4D2297FA23900BB3F1D /* Purchase */ = {
+			isa = PBXGroup;
+			children = (
+				88FBB4CD297EE69B00BB3F1D /* PurchasePopup.swift */,
+				88FBB4D0297FA23600BB3F1D /* PurchaseSwipePromo.swift */,
+				88FBB4D3297FF24B00BB3F1D /* PurchaseOptionView.swift */,
+			);
+			path = Purchase;
+			sourceTree = "<group>";
+		};
+		88FBB4D9298005BD00BB3F1D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				673646A7293D3B1500D9A639 /* Extensions.swift */,
+				88FBB4D7298005B900BB3F1D /* RoundedCorner.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		88FBB4DC2980192A00BB3F1D /* CardViews */ = {
+			isa = PBXGroup;
+			children = (
+				88FBB4DA2980192200BB3F1D /* CardImageScroller.swift */,
+				88FBB4DE2980262200BB3F1D /* CardView.swift */,
+				88FBB4E029802E2A00BB3F1D /* FullScreenCardView.swift */,
+			);
+			path = CardViews;
+			sourceTree = "<group>";
+		};
+		88FBB4DD2980193200BB3F1D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				88FBB4DC2980192A00BB3F1D /* CardViews */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +329,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FBB4E129802E2A00BB3F1D /* FullScreenCardView.swift in Sources */,
 				67F800212950B442007E053D /* ChatManager.swift in Sources */,
 				889CC5F929685FB5000025E6 /* MessageListView.swift in Sources */,
 				6768027A293BF212001F5F67 /* ContentView.swift in Sources */,
+				88FBB4E3298034B700BB3F1D /* CircleButtonView.swift in Sources */,
 				882724C1297E8E7200EC0EFD /* PersonSquare.swift in Sources */,
 				6745C109293FC7D900A00696 /* RoundedImage.swift in Sources */,
 				88FBB4CE297EE69B00BB3F1D /* PurchasePopup.swift in Sources */,
@@ -285,19 +343,25 @@
 				673646A8293D3B1500D9A639 /* Extensions.swift in Sources */,
 				889CC5FB29685FC5000025E6 /* MessageListVM.swift in Sources */,
 				67680286293BF35D001F5F67 /* MainView.swift in Sources */,
+				88FBB4D8298005B900BB3F1D /* RoundedCorner.swift in Sources */,
+				88FBB4D6297FF2AA00BB3F1D /* Subscription.swift in Sources */,
 				67F8001F2950B411007E053D /* ChatView.swift in Sources */,
 				67F800182950B062007E053D /* Person.swift in Sources */,
 				67F8001C2950B19C007E053D /* MessageView.swift in Sources */,
 				6745C10F29453BE400A00696 /* ProfileSwipePromo.swift in Sources */,
 				673646A2293BFA7700D9A639 /* TabBarButtonView.swift in Sources */,
 				67680278293BF212001F5F67 /* TinderCloneApp.swift in Sources */,
+				88FBB4DB2980192200BB3F1D /* CardImageScroller.swift in Sources */,
+				88FBB4D4297FF24B00BB3F1D /* PurchaseOptionView.swift in Sources */,
 				67F800152950AEE0007E053D /* Message.swift in Sources */,
+				88FBB4D1297FA23600BB3F1D /* PurchaseSwipePromo.swift in Sources */,
 				6745C106293FB16C00A00696 /* ProfileView.swift in Sources */,
 				882724BE297E84AA00EC0EFD /* LikesView.swift in Sources */,
 				673646A6293D391600D9A639 /* AppStateManager.swift in Sources */,
 				882724BA297E812400EC0EFD /* UserManager.swift in Sources */,
 				882724C3297ECD7E00EC0EFD /* TopPicksView.swift in Sources */,
 				67F8001A2950B0FF007E053D /* MessagePreview.swift in Sources */,
+				88FBB4DF2980262200BB3F1D /* CardView.swift in Sources */,
 				882724BC297E814A00EC0EFD /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

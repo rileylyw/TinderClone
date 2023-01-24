@@ -9,12 +9,24 @@ import SwiftUI
 
 struct PurchasePopup: View {
 
-    @Binding var isVisible: Bool // binding connects us to a single source of truth, pointing to a value somewhere else
+    @Binding var isVisible: Bool
+    // binding connects us to a single source of truth, pointing to a value somewhere else
+    // have read and write access, pass data up and down
+    
+    @State private var selectedIndex: Int = 1
     
     let screen = UIScreen.main.bounds
     
+    let subs: [Subscription] = [
+        Subscription.example1,
+        Subscription.example2,
+        Subscription.example3
+    ]
+    
+    
     func processPayment() {
-        
+        // Backend stuff, can do as follows:
+        // let product = subs[selectedIndex]
     }
     
     var body: some View {
@@ -28,12 +40,22 @@ struct PurchasePopup: View {
                         .font(.system(size: 24, weight: .bold))
                     
                     // purchase swipe promo
-                    Text("Purchase swipe promo")
+                    PurchaseSwipePromo()
                         .frame(height: geo.size.height/3)
-                        .background(Color.gray)
+                        .padding(.top, -35)
                     
-                    // 3 purchase options
                     Spacer()
+                    // 3 purchase options
+                    
+                    HStack {
+                        ForEach(subs.indices) { ind in
+                            let sub = subs[ind]
+                            PurchaseOptionView(sub: sub, isSelected: ind == selectedIndex)
+                                .onTapGesture(perform: {
+                                    selectedIndex = ind
+                                })
+                        }
+                    }
                     
                     // continue
                     Button(action: {}, label: {

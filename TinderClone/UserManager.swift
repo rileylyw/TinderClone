@@ -31,4 +31,13 @@ class UserManager: ObservableObject {
     private func loadTopPicks() {
         topPicks = Person.examples.shuffled()
     }
+    
+    public func swipe(_ person: Person, _direction: SwipeDirection) {
+        // 19.25
+    }
+}
+
+enum SwipeDirection {
+    case right
+    case left
 }
