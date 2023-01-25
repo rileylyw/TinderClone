@@ -1,6 +1,6 @@
 # TinderClone App
 
-### This is a serverless clone of the Tinder App.
+### This is a clone of the Tinder App without networking.
 - Swift
 - MVVM architecture
 
