@@ -11,11 +11,17 @@ class UserManager: ObservableObject {
     @Published var currentUser: User = User(name: "", age: 0, jobTitle: "")
     @Published var matches: [Person] = []
     @Published var topPicks: [Person] = []
+    @Published var cardPeople: [Person] = []
     
     init() {
         loadUser()
         loadMatches()
         loadTopPicks()
+        loadCardPeople()
+    }
+    
+    private func loadCardPeople() {
+        self.cardPeople = Person.examples
     }
     
     private func loadUser() {
@@ -25,15 +31,21 @@ class UserManager: ObservableObject {
     }
     
     private func loadMatches() {
-        matches = Person.examples
+        self.matches = Person.examples
     }
     
     private func loadTopPicks() {
-        topPicks = Person.examples.shuffled()
+        self.topPicks = Person.examples.shuffled()
     }
     
     public func swipe(_ person: Person, _direction: SwipeDirection) {
-        // 19.25
+        cardPeople.removeLast()
+        // networking to backend
+    }
+    
+    public func superLike(_ person: Person) {
+        cardPeople.removeLast()
+        // networking to backend
     }
 }
 

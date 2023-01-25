@@ -29,6 +29,8 @@ struct CardImageScroller: View {
         imageIndex = min(max(0, newIndex), person.imageURLS.count - 1)
     }
     
+    let screenCutoff = (UIScreen.main.bounds.width / 2) * 0.4
+    
     var body: some View {
         GeometryReader { geo in
             ZStack {
@@ -42,6 +44,30 @@ struct CardImageScroller: View {
                         .frame(width: geo.size.width, height: geo.size.height)
                         .clipped()
                  
+                    VStack {
+                        HStack {
+                            Image(systemName: "heart.square")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(.green)
+                                .frame(width: 150)
+                                .rotationEffect(Angle(degrees: 10))
+                                .opacity(Double(person.x / screenCutoff) - 1)
+                            
+                            Spacer()
+                            
+                            Image(systemName: "clear")
+                                .resizable()
+                                .aspectRatio(contentMode: .fit)
+                                .foregroundColor(.red)
+                                .frame(width: 150)
+                                .rotationEffect(Angle(degrees: -10))
+                                .opacity(Double(person.x / screenCutoff) * -1 - 1)
+                        }
+                        .padding(20)
+                        Spacer()
+                    }
+                    
                     HStack {
                         Rectangle()
                             .onTapGesture(perform: { updateImageIndex(addition: false) })

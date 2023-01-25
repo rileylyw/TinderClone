@@ -11,18 +11,23 @@ struct CardView: View {
     
     @State var person: Person
     @Binding var fullscreenMode: Bool
+    @EnvironmentObject var userMng: UserManager
     
     let screenCutoff = ( UIScreen.main.bounds.width / 2) * 0.8
+    
+    @Namespace var imageNameSpace
     
     var body: some View {
         GeometryReader { geo in
             if fullscreenMode {
-                Text("FULL SCREEN")
+                FullScreenCardView(person: person, fullscreenMode: $fullscreenMode, nameSpace: imageNameSpace)
+                    .animation(.easeOut(duration: 0.2))
             } else {
                 CardImageScroller(person: person, fullscreenMode: $fullscreenMode)
                     .animation(.easeOut(duration: 0.2))
                     .frame(width: geo.size.width - 20, height: geo.size.height)
                     .padding(.leading, 10)
+                    .matchedGeometryEffect(id: "image\(person.id)", in: imageNameSpace)
                     .offset(x: person.x, y: person.y)
                     .rotationEffect(.degrees(person.degree))
                     .gesture(
@@ -54,10 +59,12 @@ struct CardView: View {
                                         // swipe right
                                         person.x = 500
                                         person.degree = 12
+                                        userMng.swipe(person, _direction: .right)
                                     } else if width < -screenCutoff {
                                         // swipe left
                                         person.x = -500
                                         person.degree = -12
+                                        userMng.swipe(person, _direction: .left)
                                     }
                                     
                                 }
@@ -70,7 +77,7 @@ struct CardView: View {
 
 struct CardView_Previews: PreviewProvider {
     static var previews: some View {
-        CardView(person: Person.example, fullscreenMode: .constant(true))
-        CardView(person: Person.example, fullscreenMode: .constant(false))
+        CardView(person: Person.example, fullscreenMode: .constant(true)).environmentObject(UserManager())
+        CardView(person: Person.example, fullscreenMode: .constant(false)).environmentObject(UserManager())
     }
 }

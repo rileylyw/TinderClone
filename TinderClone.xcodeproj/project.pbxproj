@@ -44,6 +44,8 @@
 		88FBB4DF2980262200BB3F1D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4DE2980262200BB3F1D /* CardView.swift */; };
 		88FBB4E129802E2A00BB3F1D /* FullScreenCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4E029802E2A00BB3F1D /* FullScreenCardView.swift */; };
 		88FBB4E3298034B700BB3F1D /* CircleButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4E2298034B700BB3F1D /* CircleButtonView.swift */; };
+		88FBB4E52981032500BB3F1D /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4E42981032500BB3F1D /* CardStack.swift */; };
+		88FBB4E72981053C00BB3F1D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FBB4E62981053C00BB3F1D /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +86,8 @@
 		88FBB4DE2980262200BB3F1D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		88FBB4E029802E2A00BB3F1D /* FullScreenCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenCardView.swift; sourceTree = "<group>"; };
 		88FBB4E2298034B700BB3F1D /* CircleButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonView.swift; sourceTree = "<group>"; };
+		88FBB4E42981032500BB3F1D /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
+		88FBB4E62981053C00BB3F1D /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -241,6 +245,7 @@
 				88FBB4DA2980192200BB3F1D /* CardImageScroller.swift */,
 				88FBB4DE2980262200BB3F1D /* CardView.swift */,
 				88FBB4E029802E2A00BB3F1D /* FullScreenCardView.swift */,
+				88FBB4E42981032500BB3F1D /* CardStack.swift */,
 			);
 			path = CardViews;
 			sourceTree = "<group>";
@@ -249,6 +254,7 @@
 			isa = PBXGroup;
 			children = (
 				88FBB4DC2980192A00BB3F1D /* CardViews */,
+				88FBB4E62981053C00BB3F1D /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -338,6 +344,7 @@
 				6745C109293FC7D900A00696 /* RoundedImage.swift in Sources */,
 				88FBB4CE297EE69B00BB3F1D /* PurchasePopup.swift in Sources */,
 				67F800232950B6F0007E053D /* ChatViewHeader.swift in Sources */,
+				88FBB4E72981053C00BB3F1D /* HomeView.swift in Sources */,
 				882724C7297ECF7A00EC0EFD /* MatchesView.swift in Sources */,
 				88762C9B297AC72000EA406A /* MessageRowView.swift in Sources */,
 				673646A8293D3B1500D9A639 /* Extensions.swift in Sources */,
@@ -363,6 +370,7 @@
 				67F8001A2950B0FF007E053D /* MessagePreview.swift in Sources */,
 				88FBB4DF2980262200BB3F1D /* CardView.swift in Sources */,
 				882724BC297E814A00EC0EFD /* User.swift in Sources */,
+				88FBB4E52981032500BB3F1D /* CardStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

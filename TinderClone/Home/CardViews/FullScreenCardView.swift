@@ -12,14 +12,21 @@ struct FullScreenCardView: View {
     
     @Binding var fullscreenMode: Bool
     
+    @EnvironmentObject var userMng: UserManager
+    
+    var nameSpace: Namespace.ID
+    
     let screen = UIScreen.main.bounds
     
     var body: some View {
         ZStack(alignment: .bottom) {
+            Color.white.edgesIgnoringSafeArea(.all)
+            
             ScrollView(showsIndicators: false) {
                 VStack(spacing: 0) {
                     CardImageScroller(person: person, fullscreenMode: $fullscreenMode)
                         .frame(width: screen.width, height: screen.height * 0.6)
+                        .matchedGeometryEffect(id: "image\(person.id)", in: nameSpace)
                     
                     HStack {
                         VStack(alignment: .leading) {
@@ -40,7 +47,7 @@ struct FullScreenCardView: View {
                         }
                         .padding([.horizontal, .top], 16)
                         
-                        Button(action: {}, label: {
+                        Button(action: { fullscreenMode = false }, label: {
                             Image(systemName: "arrow.down.circle.fill")
                                 .font(.system(size: 42))
                                 .background(Color.white)
@@ -79,7 +86,7 @@ struct FullScreenCardView: View {
                     Spacer().frame(height: 32)
                     
                     VStack(spacing: 24) {
-                        Button(action: {}, label: {
+                        Button(action: { showActionSheet() }, label: {
                             VStack(spacing: 8) {
                                 Text("SHARE \(person.name.uppercased())'S PROFILE")
                                     .font(.system(size: 16, weight: .medium))
@@ -89,7 +96,7 @@ struct FullScreenCardView: View {
                             .opacity(0.9)
                         })
                         
-                        Button(action: {}, label: {
+                        Button(action: { showActionSheet() }, label: {
                             VStack(spacing: 8) {
                                 Text("REPORT \(person.name.uppercased())")
                                     .font(.system(size: 18, weight: .medium))
@@ -106,19 +113,22 @@ struct FullScreenCardView: View {
                 Spacer()
                 // no
                 CircleButtonView(type: .no) {
-                    
+                    fullscreenMode = false
+                    userMng.swipe(person, _direction: .left)
                 }
                 .frame(height: 50)
                 
                 // star
                 CircleButtonView(type: .star) {
-                    
+                    fullscreenMode = false
+                    userMng.superLike(person)
                 }
                 .frame(height: 45)
                 
                 // heart
                 CircleButtonView(type: .heart) {
-                    
+                    fullscreenMode = false
+                    userMng.swipe(person, _direction: .right)
                 }
                 .frame(height: 50)
                 
@@ -138,10 +148,19 @@ struct FullScreenCardView: View {
         }
         .edgesIgnoringSafeArea(.bottom)
     }
+    
+    func showActionSheet() {
+        let items: [Any] = ["What do you think about \(person.name)?"]
+        let av = UIActivityViewController(activityItems: items, applicationActivities: nil)
+        
+        UIApplication.shared.windows.first?.rootViewController?.present(av, animated: true, completion: nil)
+    }
 }
 
 struct FullScreenCardView_Previews: PreviewProvider {
+    @Namespace static var placeholder
     static var previews: some View {
-        FullScreenCardView(person: Person.example, fullscreenMode: .constant(true))
+        FullScreenCardView(person: Person.example, fullscreenMode: .constant(true), nameSpace: placeholder)
+            .environmentObject(UserManager())
     }
 }
