@@ -20,9 +20,9 @@ struct User { // myself
 
 extension User {
     static let example = User(
-        name: "Alex",
-        age: 50,
-        jobTitle: "Software Engineer",
+        name: "Elon",
+        age: 80,
+        jobTitle: "Biz owner",
         goldSubscriber: false,
         profileTip: "Photo Tip: Make waves with a beach photo and get more likes",
         imageURLS: [URL(string: "https://picsum.photos/400/308")!]
